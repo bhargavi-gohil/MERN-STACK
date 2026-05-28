@@ -1,0 +1,70 @@
+Git --> free open source version control tool.
+
+use case: 
+ 1. track changes in source code during software development.
+ 2. manage and collaborate on projects with multiple developers.
+ 3. maintain a history of changes and revert to previous versions if needed.
+ 4. branch and merge code to work on new features or bug fixes without affecting the main codebase.
+
+
+
+ GitHub --> web-based platform that provides hosting for Git repositories and offers additional features for collaboration and project management.
+  features:
+    1. Repository hosting: GitHub allows users to create and host Git repositories, making it easy to share code and collaborate with others.
+    2. Team collaboration: GitHub provides tools for team collaboration, including issue tracking, pull requests, and code reviews, which facilitate communication and coordination among developers.
+    3. Project management: GitHub offers project management features such as project boards, milestones
+    4. push/pull requests: GitHub allows developers to submit changes to a repository through pull requests, which can be reviewed and merged by repository maintainers.
+    5. code review
+    6. CI/CD integration: GitHub integrates with various continuous integration and continuous deployment (CI/CD) tools, allowing developers to automate testing and deployment processes.
+
+    Git is a Decentralized version control system:
+  
+In summary, Git is a version control system that helps developers track changes in their code, while GitHub is a platform that provides hosting for Git repositories and offers additional features for collaboration and project management.
+
+git add .
+git config --global user.name "bhargavi-gohil"
+git config --global user.email "bhargavigohil098@gmail.com"
+
+git init 
+git add . 
+git restore --<filename> // for untrack file
+
+git rm <filename> // for delete file from staging area and working directory
+git rm --cached <filename> // for delete file from staging area but keep it in working
+directory
+git commit -m "commit message"
+git log // to see commit history
+git log --oneline // to see commit history in one line format
+
+git branch <branch-name> // to create a new branch
+git checkout <branch-name> // to switch to a branch
+git merge <branch-name> // to merge a branch into the current branch
+git pull // to fetch and merge changes from a remote repository
+git push // to push changes to a remote repository
+
+
+rm -rf .git // to delete the git repository and all its history
+
+gir remote add origin <repository-url> // to add a remote repository
+git remote -v // to view the remote repositories
+
+git branch -m <branch-name> // to rename a branch
+git branch -d <branch-name> // to delete a branch
+
+git pull --> to fetch and merge changes from a remote repository into the current branch. It is used to update the local repository with the latest changes from the remote repository.
+
+git push --> to upload local repository changes to a remote repository. It is used to share changes with others and update the remote repository with the latest commits from the local repository.
+
+working directory --> staging area --> local repository --> remote repository
+
+remove/delete untracked files:
+git clean -f // to remove untracked files from the working directory
+git clean -fd // to remove untracked files and directories from the working directory
+git clean -n // to preview the files that would be removed without actually deleting them
+
+git branch : 
+----> master/main --> default branch where the stable code is maintained.
+----> feature branches --> used to develop new features or make changes without affecting the main codebase.
+ git checkout -b <branch-name> // to create and switch to a new branch in one command
+ git merge <branch-name> // to merge a branch into the current branch
+ 
