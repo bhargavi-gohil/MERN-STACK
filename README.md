@@ -27,6 +27,8 @@ This repository serves as a learning hub, showcasing hands-on implementations in
 
 - **designs/**  
   UI/UX design prototypes and styling experiments.
+- **flipkart Clone/**
+- A MERN‑based e‑commerce web app replicating Flipkart’s core shopping experience.
 
 ---
 
